@@ -1,0 +1,15 @@
+
+CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
+PROJECT(pystring)
+
+
+set(PYSTRING pystring)
+set(CXX_FILES pystring.cpp)
+
+SET( PYSTRING_INCLUDE_DIR . )
+
+set(H_FILES ${PYSTRING_INCLUDE_DIR}/pystring.h)
+
+SET( SOURCE_FILES ${CXX_FILES} ${H_FILES} ) 
+
+ADD_LIBRARY(pystring_lib_static STATIC ${SOURCE_FILES})
